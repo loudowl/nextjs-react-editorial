@@ -1,21 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const VideoContainer = styled.div`
-  width: 80%;
-  max-width: 800px;
-  margin-top: 2rem;
-`;
-
-const StyledVideo = styled.video`
-  width: 100%;
-`;
+import { VideoContainer } from '../styled/containers';
+import { StyledVideo } from '../styled/media';
 
 interface VideoPlayerProps {
   src: string;
 }
 
-const VideoPlayer: React.FC<VideoPlayerProps> = ({ src }) => {
+export const VideoPlayer: React.FC<VideoPlayerProps> = ({ src }) => {
   return (
     <VideoContainer>
       <StyledVideo controls>
@@ -25,5 +16,3 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src }) => {
     </VideoContainer>
   );
 };
-
-export default VideoPlayer;

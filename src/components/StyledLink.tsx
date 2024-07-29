@@ -1,16 +1,10 @@
-// components/StyledLink.js
+import React, { ReactNode } from 'react';
 import Link from 'next/link';
-import styled from 'styled-components';
+import { LinkInner } from '../styled/navigation';
 
-const StyledAnchor = styled.span`
-  color: white;
-  text-decoration: none;
-`;
 
-const StyledLink = ({ href, children }) => (
+export const StyledLink = ({ href, children }: { href: string; children: ReactNode }) => (
   <Link href={href} passHref>
-    <StyledAnchor>{children}</StyledAnchor>
+    <LinkInner>{children}</LinkInner>
   </Link>
 );
-
-export default StyledLink;
