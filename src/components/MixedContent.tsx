@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container }  from '../styled/containers';
+import { Container } from '../styled/containers';
 import useMixedContent from '../hooks/useMixedContent';
 
 const MixedContent = () => {

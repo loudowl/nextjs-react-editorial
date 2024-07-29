@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, Main, Title } from '../styled/containers';
 
 export default function Home() {

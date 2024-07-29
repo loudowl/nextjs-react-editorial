@@ -3,7 +3,6 @@ import { Nav } from '../styled/navigation';
 import { StyledLink } from './StyledLink';
 import { HeaderContainer } from '../styled/containers';
 
-
 const Header = () => {
   return (
     <HeaderContainer>

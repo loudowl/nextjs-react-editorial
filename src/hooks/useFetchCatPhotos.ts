@@ -15,4 +15,3 @@ export const useFetchCatPhotos = () => {
 
   return photos;
 };
-

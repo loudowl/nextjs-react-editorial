@@ -1,6 +1,7 @@
 import { useFetchCatPhotos } from '../hooks/useFetchCatPhotos';
 import { Container, CatPagePhotoList, CatPagePhotoItem} from '../styled/containers';
 import { CatPageTitle } from '../styled/typography';
+import Image from 'next/image';
 
 interface Photo {
   id: string;
@@ -16,7 +17,7 @@ export default function Cats() {
       <CatPagePhotoList>
         {photos.map((photo: Photo) => (
           <CatPagePhotoItem key={photo.id}>
-            <img src={photo.url} alt="Cat" />
+            <Image src={photo.url} alt="Cat" />
           </CatPagePhotoItem>
         ))}
       </CatPagePhotoList>

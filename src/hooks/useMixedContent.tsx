@@ -15,17 +15,23 @@ const useMixedContent = () => {
       let paragraphCount = 0;
 
       loremIpsum.forEach((item: any, index: number) => {
-        mixedContent.push(<Paragraph key={`para-${index}`}>{item.body}</Paragraph>);
+        mixedContent.push(
+          <Paragraph key={`para-${index}`}>{item.body}</Paragraph>,
+        );
         paragraphCount++;
 
         if (paragraphCount === 3) {
-          mixedContent.push(<Headline key={`headline-${index}`}>Random Headline</Headline>);
+          mixedContent.push(
+            <Headline key={`headline-${index}`}>Random Headline</Headline>,
+          );
         }
 
         if (paragraphCount === 5) {
           const catPhoto = catPhotos.shift();
           if (catPhoto) {
-            mixedContent.push(<Image key={`cat-${index}`} src={catPhoto.url} alt="Cat" />);
+            mixedContent.push(
+              <Image key={`cat-${index}`} src={catPhoto.url} alt="Cat" />,
+            );
           }
           paragraphCount = 0;
         }

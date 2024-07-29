@@ -21,8 +21,6 @@ export const fetchAds = async () => {
   return response.data;
 };
 
-
-
 export const fetchLoremIpsum = async () => {
   const response = await axios.get(LOREM_IPSUM_API_URL);
   return response.data;

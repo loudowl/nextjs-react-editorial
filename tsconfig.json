@@ -28,7 +28,7 @@
   },
   "include": [
     "src",
-    ".next/types/**/*.ts" ],
+    ".next/types/**/*.ts", "startUpMessage.js" ],
   "exclude": [
     "node_modules"
   ]

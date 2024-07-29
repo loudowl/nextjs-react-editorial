@@ -4,13 +4,11 @@ export const Container = styled.div`
   padding: 2rem;
 `;
 
-
 export const HeaderContainer = styled.header`
   background-color: #333;
   padding: 1rem;
   color: white;
 `;
-
 
 export const VideoContainer = styled.div`
   width: 80%;
@@ -35,7 +33,6 @@ export const Title = styled.h1`
   text-align: center;
 `;
 
-
 export const VideoPageContainer = styled.div`
   padding: 0 2rem;
 `;
@@ -56,7 +53,6 @@ export const VideoPageTitle = styled.h1`
   font-size: 4rem;
   text-align: center;
 `;
-
 
 export const CatPagePhotoList = styled.div`
   display: flex;
