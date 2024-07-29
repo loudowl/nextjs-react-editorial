@@ -1,6 +1,5 @@
 // import React, { useEffect, useState } from 'react';
 import React from 'react';
-import styled from 'styled-components';
 import { VideoPlayer } from '../components/VideoPlayer';
 import { VideoPageContainer, VideoPageMain, VideoPageTitle } from '../styled/containers';
 
