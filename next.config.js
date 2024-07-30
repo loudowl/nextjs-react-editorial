@@ -1,6 +1,15 @@
 module.exports = {
     reactStrictMode: true,
     swcMinify: true,
+    images: {
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: '**.**.com',
+          port: '',
+        },
+      ],
+    },
     experimental: {
       swcLoader: true,
       swcMinify: true,
